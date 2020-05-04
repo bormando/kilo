@@ -4,8 +4,6 @@ jobs:
     docker:
       - image: circleci/node:latest
       - image: selenium/standalone-chrome:latest
-    executor:
-      name: node/default
     steps:
       - checkout
       - run: npm install
