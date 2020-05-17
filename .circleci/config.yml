@@ -6,8 +6,16 @@ jobs:
       # - image: selenium/standalone-chrome:latest
     steps:
       - checkout
-      - run: npm install
-      - run: npm test
-      - run: npm run report-ci
+      - run:
+        name: Install dependencies
+        command: npm install
+      - run:
+        name: Run tests
+        command: npm test
+      - run:
+        name: Generate Allure report
+        command: npm run report-ci
+        when: always
       - store_artifacts:
+          name: Upload Allure report
           path: allure-report
