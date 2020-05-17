@@ -12,7 +12,7 @@ class Main extends Page {
         this.searchField?.setValue(valueSet);
         this.suggestionResult(valueFind);
         browser.pause(1000);
-        browser.keys('\uE007');
+        browser.keys('Enter');
     }
 }
 
