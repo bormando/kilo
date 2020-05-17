@@ -7,15 +7,15 @@ jobs:
     steps:
       - checkout
       - run:
-        name: Install dependencies
-        command: npm install
+          name: Install dependencies
+          command: npm install
       - run:
-        name: Run tests
-        command: npm test
+          name: Run tests
+          command: npm test
       - run:
-        name: Generate Allure report
-        command: npm run report-ci
-        when: always
+          name: Generate Allure report
+          command: npm run report-ci
+          when: always
       - store_artifacts:
           name: Upload Allure report
           path: allure-report
