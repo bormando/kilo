@@ -1,7 +1,7 @@
 exports.config = {
-    hostname: 'localhost',
-    port: 4444,
-    path: '/wd/hub',
+    // hostname: 'localhost',
+    // port: 4444,
+    // path: '/wd/hub',
     //
     // ====================
     // Runner Configuration
