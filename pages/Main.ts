@@ -1,4 +1,4 @@
-import Page from "./page";
+import Page from "./Page";
 
 class Main extends Page {
     get searchField() { return this.getElement('#searchInput', 'Search input field'); }

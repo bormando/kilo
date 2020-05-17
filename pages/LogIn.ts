@@ -1,5 +1,5 @@
 import { assert } from 'chai';
-import Page from './page'
+import Page from './Page';
 
 class LogIn extends Page {
 
