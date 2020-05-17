@@ -8,3 +8,6 @@ jobs:
       - checkout
       - run: npm install
       - run: npm run test
+      - run: allure generate allure-results -o allure-report
+      - store_artifacts:
+          path: allure-report
