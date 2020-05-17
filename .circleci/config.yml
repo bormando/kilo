@@ -6,8 +6,8 @@ jobs:
       - image: selenium/standalone-chrome:latest
     steps:
       - checkout
-      - run: yarn install
-      - run: yarn test
+      - run: npm install
+      - run: npm test
       - run: allure generate allure-results -o allure-report
       - store_artifacts:
           path: allure-report
